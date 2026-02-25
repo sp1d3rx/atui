@@ -1,0 +1,161 @@
+Screen {
+    layout: vertical;
+}
+
+#settings-bar {
+    height: 3;
+    padding: 0 1;
+    align: left middle;
+    background: $surface;
+    border-bottom: wide $panel-lighten-1;
+}
+
+#settings-bar Label {
+    width: auto;
+    margin: 0 1 0 0;
+}
+
+#settings-bar Input {
+    width: 22;
+    margin: 0 1 0 0;
+}
+
+#settings-bar Button {
+    margin: 0 1 0 0;
+}
+
+#instance-table {
+    height: 1fr;
+}
+
+#status {
+    height: 1;
+    padding: 0 1;
+    color: $text-muted;
+    background: $surface-lighten-1;
+}
+
+#command-bar {
+    height: 3;
+    padding: 0 1;
+    align: left middle;
+    background: $surface;
+    border-top: wide $panel-lighten-1;
+}
+
+#command-label {
+    width: 10;
+}
+
+#command-preview {
+    width: 1fr;
+    margin: 0 1 0 0;
+}
+
+#command-bar Button {
+    width: 10;
+}
+
+#activity-log {
+    height: 6;
+    padding: 0 1;
+    color: $text-muted;
+    background: $surface-darken-1;
+    border-top: wide $panel-lighten-1;
+}
+
+#port-modal {
+    width: 50;
+    height: auto;
+    padding: 1 2;
+    border: round $accent;
+    background: $panel;
+    align: center middle;
+}
+
+#port-modal-title {
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#port-modal Input {
+    margin-bottom: 1;
+}
+
+#port-modal-buttons {
+    align: right middle;
+    height: auto;
+    margin-top: 1;
+}
+
+#port-modal-buttons Button {
+    margin-left: 1;
+}
+
+#instance-info-modal {
+    width: 120;
+    height: 90%;
+    padding: 1 2;
+    border: round $accent;
+    background: $panel;
+}
+
+#instance-info-title {
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#instance-info-meta {
+    margin-bottom: 1;
+    color: $text-muted;
+}
+
+#instance-info-actions {
+    height: auto;
+    margin-bottom: 1;
+}
+
+#instance-info-actions Button {
+    margin-right: 1;
+}
+
+#active-forwards-table {
+    height: 1fr;
+    margin-bottom: 1;
+}
+
+#forward-history-table {
+    height: 1fr;
+}
+
+#quit-modal {
+    width: 72;
+    height: auto;
+    padding: 1 2;
+    border: round $error;
+    background: $panel;
+    align: center middle;
+}
+
+#quit-modal-title {
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#quit-modal-body {
+    margin-bottom: 1;
+}
+
+#quit-active-table {
+    height: 10;
+    margin-bottom: 1;
+}
+
+#quit-modal-buttons {
+    align: right middle;
+    height: auto;
+}
+
+#quit-modal-buttons Button {
+    margin-left: 1;
+}

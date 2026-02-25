@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+
+def _bootstrap_src_path() -> None:
+    root = Path(__file__).resolve().parent
+    src = root / "src"
+    if src.is_dir():
+        sys.path.insert(0, str(src))
+
+
+def main() -> int:
+    _bootstrap_src_path()
+    from aws_tui.app import main as app_main
+
+    app_main(sys.argv[1:])
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

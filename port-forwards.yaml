@@ -1,0 +1,52 @@
+default_remote_port: 22
+default_local_port: 2222
+
+presets:
+  - key: ssh
+    label: SSH (22)
+    remote_port: 22
+    local_port: 2222
+  - key: http
+    label: HTTP (80)
+    remote_port: 80
+    local_port: 8080
+  - key: https
+    label: HTTPS (443)
+    remote_port: 443
+    local_port: 8443
+  - key: postgres
+    label: PostgreSQL (5432)
+    remote_port: 5432
+    local_port: 5432
+  - key: mysql
+    label: MySQL (3306)
+    remote_port: 3306
+    local_port: 3306
+  - key: redis
+    label: Redis (6379)
+    remote_port: 6379
+    local_port: 6379
+  - key: mongodb
+    label: MongoDB (27017)
+    remote_port: 27017
+    local_port: 27017
+  - key: rdp
+    label: RDP (3389)
+    remote_port: 3389
+    local_port: 3389
+  - key: rabbitmq-amqp
+    label: RabbitMQ AMQP (5672)
+    remote_port: 5672
+    local_port: 5672
+  - key: rabbitmq-amqps
+    label: RabbitMQ AMQP SSL (5671)
+    remote_port: 5671
+    local_port: 5671
+  - key: rabbitmq-admin
+    label: RabbitMQ Admin (15672)
+    remote_port: 15672
+    local_port: 15672
+  - key: rabbitmq-admin-ssl
+    label: RabbitMQ Admin SSL (15671)
+    remote_port: 15671
+    local_port: 15671
