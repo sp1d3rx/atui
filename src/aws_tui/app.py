@@ -388,6 +388,7 @@ class AwsTuiApp(App[None]):
         self._log(f"Port-forward history file: {self.history_store.path}")
         self._log("Press Enter on an instance to open details (Add new, Start stopped, Stop active).")
         self._log("App started.")
+        self.set_focus(table)
         self.action_refresh()
 
     @work(thread=True, exclusive=True, name="load-instances")
