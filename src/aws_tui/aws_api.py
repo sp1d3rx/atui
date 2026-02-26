@@ -25,7 +25,11 @@ class AwsInstance:
     region: str = DEFAULT_REGION
 
     def build_ssm_shell_command(self) -> list[str]:
-        return self._base_start_session_command()
+         return [*self._base_start_session_command(),
+          "--document-name",
+          "AWS-StartInteractiveCommand",
+         "--parameters",
+          "command=[/bin/bash]"]
 
     def build_port_forward_command(self, remote_port: int, local_port: int) -> list[str]:
         parameters = json.dumps(
